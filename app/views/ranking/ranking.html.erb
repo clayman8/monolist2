@@ -1,6 +1,6 @@
 <div class="container">
   <div class="container-inner inner-default clearfix">
-    <% items.each.with_index do |item, i| %>
+    <% @items.each.with_index(1) do |item, i| %>
       <div class="item-box">
         <div class="image">
           <div class="img-wrap">
@@ -13,7 +13,7 @@
         </div>
         <div class="detail">
           <div class="rank">
-            第 <%= i+1 %> 位 (<%= pluralize(item_counts[i], unit) %>)
+            第 <%= i %> 位
           </div>
         </div>
         <div class="detail">
